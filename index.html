@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Gerencial - Carl's Jr.</title>
+
+  <!-- ESTILOS (cada archivo es una parte del diseño) -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/encabezado.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/inventario.css">
+  <link rel="stylesheet" href="css/formularios.css">
+  <link rel="stylesheet" href="css/tablas.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/ventas-catalogo.css">
+  <link rel="stylesheet" href="css/ventas-carrito.css">
+  <link rel="stylesheet" href="css/ventas-ticket.css">
+  <link rel="stylesheet" href="css/ventas-ingredientes.css">
+  <link rel="stylesheet" href="css/ventas-historial.css">
+  <link rel="stylesheet" href="css/estado-bd.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body class="modo-login">
+
+  <!-- Todas las pantallas se arman aquí dentro (ver js/nucleo/montar.js) -->
+  <div id="app"></div>
+
+  <!-- 0. FIREBASE (librerías oficiales de Google; necesitan internet) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <!-- 1. BASE DE DATOS (js/datos): dónde y cómo se guarda la información -->
+  <script src="js/datos/config-firebase.js"></script>
+  <script src="js/datos/semilla.js"></script>
+  <script src="js/datos/almacen.js"></script>
+  <script src="js/datos/almacen-local.js"></script>
+  <script src="js/datos/almacen-firebase.js"></script>
+  <script src="js/datos/conexion.js"></script>
+  <script src="js/datos/productos.js"></script>
+  <script src="js/datos/hamburguesas.js"></script>
+  <script src="js/datos/ingresos.js"></script>
+  <script src="js/datos/merma.js"></script>
+  <script src="js/datos/respaldo.js"></script>
+
+  <!-- 2. AYUDAS GENERALES -->
+  <script src="js/nucleo/utilidades.js"></script>
+  <script src="js/nucleo/estado-bd.js"></script>
+
+  <!-- 3. PANTALLAS (vistas): el HTML de cada pantalla -->
+  <script src="vistas/login.js"></script>
+  <script src="vistas/dashboard.js"></script>
+  <script src="vistas/inv-menu.js"></script>
+  <script src="vistas/inv-productos.js"></script>
+  <script src="vistas/inv-ingresos.js"></script>
+  <script src="vistas/inv-merma.js"></script>
+  <script src="vistas/inv-datos.js"></script>
+  <script src="vistas/inventario.js"></script>
+  <script src="vistas/ventas-catalogo.js"></script>
+  <script src="vistas/ventas-carrito.js"></script>
+  <script src="vistas/ventas-ingredientes.js"></script>
+  <script src="vistas/ventas-ticket.js"></script>
+  <script src="vistas/ventas-historial.js"></script>
+  <script src="vistas/ventas.js"></script>
+  <script src="js/nucleo/montar.js"></script>
+
+  <!-- 4. NAVEGACIÓN Y SESIÓN -->
+  <script src="js/nucleo/navegacion.js"></script>
+  <script src="js/nucleo/auth.js"></script>
+
+  <!-- 5. MÓDULO DE INVENTARIO -->
+  <script src="js/inventario/tabs.js"></script>
+  <script src="js/inventario/menu.js"></script>
+  <script src="js/inventario/productos.js"></script>
+  <script src="js/inventario/ingresos.js"></script>
+  <script src="js/inventario/merma.js"></script>
+  <script src="js/inventario/eliminar.js"></script>
+  <script src="js/inventario/respaldo.js"></script>
+  <script src="js/inventario/inicio.js"></script>
+
+  <!-- 6. MÓDULO DE SIMULACIÓN DE VENTA -->
+  <script src="js/ventas/catalogo.js"></script>
+  <script src="js/ventas/carrito.js"></script>
+  <script src="js/ventas/pago.js"></script>
+  <script src="js/ventas/consumo.js"></script>
+  <script src="js/ventas/stock-simulado.js"></script>
+  <script src="js/ventas/ingredientes.js"></script>
+  <script src="js/ventas/proyeccion.js"></script>
+  <script src="js/ventas/historial.js"></script>
+  <script src="js/ventas/cobro.js"></script>
+  <script src="js/ventas/ticket.js"></script>
+  <script src="js/ventas/pos.js"></script>
+
+  <!-- 7. ARRANQUE (siempre al final) -->
+  <script src="js/nucleo/main.js"></script>
+</body>
+</html>

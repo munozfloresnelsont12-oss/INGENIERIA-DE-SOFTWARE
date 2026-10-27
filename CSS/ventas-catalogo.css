@@ -1,0 +1,82 @@
+/* css/ventas-catalogo.css — Pantalla 4: catálogo de productos del POS */
+
+/* ===========================================================================
+   PANTALLA 4 — SIMULACIÓN DE VENTA (POS)
+   =========================================================================== */
+.aviso-simulacion {
+  background: #fff6e8;
+  border-bottom: 3px solid var(--secondary-color);
+  padding: 0.6rem 40px;
+  font-size: 0.85rem;
+  color: #6b4a00;
+}
+
+.pos-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 1.2rem;
+  padding: 1.2rem 40px;
+  align-items: start;
+}
+
+.pos-catalogo {
+  background: var(--blanco);
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.pos-catalogo .sub-nav {
+  background: #f0f0f0;   /* claro, para que se lean los botones de categoría */
+  padding: 0.7rem;
+  border-radius: 0;
+}
+
+.cat-btn {
+  background: rgba(0, 0, 0, 0.06);
+  border: none;
+  color: var(--dark-color);
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.cat-btn:hover { background: rgba(0, 0, 0, 0.12); }
+
+.cat-btn.active {
+  background: var(--primary-color);
+  color: var(--blanco);
+  font-weight: 600;
+}
+
+.pos-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.7rem;
+  padding: 1rem;
+}
+
+.producto-pos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  background: #fafafa;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  padding: 0.7rem;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, transform 0.1s;
+}
+
+.producto-pos:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.producto-nombre { font-weight: 600; font-size: 0.85rem; }
+.producto-nota { font-size: 0.72rem; color: var(--gris-medio); }
+.producto-precio { font-weight: 700; color: var(--primary-color); margin-top: 0.2rem; }
+

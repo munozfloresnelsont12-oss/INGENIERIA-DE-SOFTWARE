@@ -1,0 +1,35 @@
+/* css/base.css — Colores de la marca, reinicio de estilos y fondo de la página */
+
+:root {
+  --primary-color: #da490b;   /* Rojo/naranja Carl's Jr */
+  --primary-dark: #b23807;
+  --secondary-color: #FFC72C; /* Amarillo Carl's Jr */
+  --dark-color: #1a1a1a;
+  --light-color: #f4f4f4;
+  --gris-medio: #666;
+  --borde: #e0e0e0;
+  --blanco: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Solo en la pantalla de login el contenido se centra vertical y horizontal */
+body.modo-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+

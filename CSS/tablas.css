@@ -1,0 +1,40 @@
+/* css/tablas.css — Tablas de datos */
+
+/* --------------------------------- Tablas --------------------------------- */
+.table-wrap {
+  overflow-x: auto;
+  background: var(--blanco);
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  margin-top: 0.7rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+th, td {
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--borde);
+  white-space: nowrap;
+}
+
+thead th {
+  background: #fafafa;
+  font-weight: 600;
+  color: var(--gris-medio);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+tbody tr:hover { background: #fcfcfc; }
+
+.bajo-stock {
+  color: #d9534f;
+  font-weight: 700;
+}
+

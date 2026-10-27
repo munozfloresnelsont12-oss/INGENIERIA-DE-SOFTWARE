@@ -1,0 +1,69 @@
+/* css/ventas-ticket.css — Pantalla 4: ventana emergente del ticket */
+
+/* --------------------------------- Ticket --------------------------------*/
+.ticket-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 1rem;
+}
+
+.ticket-overlay.visible { display: flex; }
+
+.ticket {
+  position: relative;
+  background: var(--blanco);
+  width: 100%;
+  max-width: 340px;
+  border-radius: 8px;
+  padding: 1.4rem 1.2rem 1.2rem;
+  font-family: "Courier New", monospace;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.cerrar-ticket {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.6rem;
+  font-size: 1.3rem;
+}
+
+.ticket-encabezado { text-align: center; margin-bottom: 0.5rem; }
+.ticket-encabezado h2 { color: var(--primary-color); font-size: 1.1rem; }
+.ticket-encabezado p { font-size: 0.75rem; color: var(--gris-medio); }
+
+.ticket hr {
+  border: none;
+  border-top: 1px dashed #999;
+  margin: 0.5rem 0;
+}
+
+.ticket-fila {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  padding: 0.15rem 0;
+}
+
+.ticket-total {
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.ticket-pie {
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--gris-medio);
+  margin-top: 0.7rem;
+}
+
+.ticket .btn-cobrar {
+  width: 100%;
+  margin-top: 1rem;
+}
+

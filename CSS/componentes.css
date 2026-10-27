@@ -1,0 +1,63 @@
+/* css/componentes.css — Etiquetas de tipo, botones pequeños y recuadro de resumen */
+
+/* ------------------------------- Etiquetas -------------------------------- */
+.etiqueta {
+  display: inline-block;
+  padding: 0.12rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: #eee;
+  color: var(--dark-color);
+}
+
+.etiqueta.congelado   { background: #d6ecff; color: #0b5c9e; }
+.etiqueta.refrigerado { background: #d9f5e6; color: #1a6b43; }
+.etiqueta.fresco      { background: #e5f7d0; color: #4a7a10; }
+.etiqueta.seco        { background: #f7e9cf; color: #8a5d13; }
+
+/* -------------------------------- Botones --------------------------------- */
+.btn-eliminar {
+  background: none;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.18rem 0.55rem;
+  font-size: 0.75rem;
+}
+
+.btn-eliminar:hover {
+  background: var(--primary-color);
+  color: var(--blanco);
+}
+
+.btn-x {
+  background: none;
+  border: none;
+  color: var(--gris-medio);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.3rem;
+}
+
+.btn-x:hover { color: var(--primary-color); }
+
+.card .btn-x {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+/* -------------------------------- Resumen --------------------------------- */
+.resumen {
+  margin-top: 1rem;
+  background: var(--blanco);
+  border-left: 4px solid var(--secondary-color);
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+

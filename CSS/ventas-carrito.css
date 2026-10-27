@@ -1,0 +1,138 @@
+/* css/ventas-carrito.css — Pantalla 4: orden actual, totales y pago */
+
+/* ------------------------------- Carrito ----------------------------------*/
+.pos-carrito {
+  background: var(--blanco);
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.pos-carrito h3 { color: var(--primary-color); margin-bottom: 0.6rem; }
+
+.carrito-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-height: 260px;
+  overflow-y: auto;
+  margin-bottom: 0.8rem;
+}
+
+.carrito-fila {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.82rem;
+  border-bottom: 1px dashed var(--borde);
+  padding-bottom: 0.5rem;
+}
+
+.carrito-info { display: flex; flex-direction: column; }
+.carrito-nombre { font-weight: 600; }
+.carrito-precio-unit { font-size: 0.72rem; color: var(--gris-medio); }
+
+.carrito-cant {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.btn-cant {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--borde);
+  background: var(--blanco);
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.btn-cant:hover { background: var(--secondary-color); }
+
+.carrito-subtotal { font-weight: 700; }
+
+.pos-totales {
+  border-top: 1px solid var(--borde);
+  padding-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.fila-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.fila-total.total-grande {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  border-top: 1px solid var(--borde);
+  padding-top: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+.pos-pago {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pos-pago label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  color: var(--gris-medio);
+  gap: 0.2rem;
+}
+
+.pos-pago select,
+.pos-pago input {
+  padding: 0.5rem;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  font-size: 0.88rem;
+}
+
+.pos-acciones {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.btn-secundario-pos {
+  flex: 1;
+  background: #eee;
+  color: var(--dark-color);
+  border: none;
+  padding: 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.btn-secundario-pos:hover { background: #ddd; }
+
+.btn-cobrar {
+  flex: 2;
+  background: var(--primary-color);
+  color: var(--blanco);
+  border: none;
+  padding: 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.btn-cobrar:hover { background: var(--primary-dark); }
+

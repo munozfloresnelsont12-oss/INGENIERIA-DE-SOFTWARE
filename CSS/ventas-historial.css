@@ -1,0 +1,9 @@
+/* css/ventas-historial.css — Pantalla 4: historial de ventas de prueba */
+
+/* ------------------------------ Historial ---------------------------------*/
+.pos-historial {
+  padding: 0 40px 2.5rem;
+}
+
+.pos-historial h3 { margin-bottom: 0.6rem; color: var(--primary-color); }
+

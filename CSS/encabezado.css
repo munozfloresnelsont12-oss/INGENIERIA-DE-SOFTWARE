@@ -1,0 +1,54 @@
+/* css/encabezado.css — Barra roja superior compartida por el panel, inventario y ventas */
+
+/* ===========================================================================
+   PANTALLAS 2 y 3 — ENCABEZADO COMPARTIDO
+   =========================================================================== */
+#dashboard-container,
+#inventario-container,
+#ventas-container {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--blanco);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+header h2 { font-size: 21px; }
+
+.header-acciones {
+  display: flex;
+  gap: 8px;
+}
+
+.logout-btn {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.logout-btn:hover { background-color: #e6b225; }
+
+.logout-btn.secundario {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--blanco);
+}
+
+.logout-btn.secundario:hover { background-color: rgba(255, 255, 255, 0.35); }
+
